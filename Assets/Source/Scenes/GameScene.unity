@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.39802572, g: 0.36429003, b: 0.30781856, a: 1}
+  m_IndirectSpecularColor: {r: 0.39694956, g: 0.36298352, b: 0.30647758, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -501,10 +501,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1247151277}
     m_Modifications:
-    - target: {fileID: 3534190964040990226, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
-      propertyPath: m_Name
-      value: Brick (9)
-      objectReference: {fileID: 0}
     - target: {fileID: 673552572604370967, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -548,6 +544,10 @@ PrefabInstance:
     - target: {fileID: 673552572604370967, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3534190964040990226, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
+      propertyPath: m_Name
+      value: Brick (9)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1121,10 +1121,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1247151277}
     m_Modifications:
-    - target: {fileID: 3534190964040990226, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
-      propertyPath: m_Name
-      value: Brick
-      objectReference: {fileID: 0}
     - target: {fileID: 673552572604370967, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1168,6 +1164,10 @@ PrefabInstance:
     - target: {fileID: 673552572604370967, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3534190964040990226, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
+      propertyPath: m_Name
+      value: Brick
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1385,10 +1385,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1247151277}
     m_Modifications:
-    - target: {fileID: 3534190964040990226, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
-      propertyPath: m_Name
-      value: Brick (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 673552572604370967, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1432,6 +1428,10 @@ PrefabInstance:
     - target: {fileID: 673552572604370967, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3534190964040990226, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
+      propertyPath: m_Name
+      value: Brick (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1725,14 +1725,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 266355017}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.5, y: 0, z: 0, w: 0.8660254}
   m_LocalPosition: {x: 15.2, y: 26.4, z: -19.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 60, y: 0, z: 0}
 --- !u!1001 &282290994
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2089,18 +2089,18 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 317892999}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.01}
+  m_LocalPosition: {x: 0, y: 0, z: -0.010004878}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 495498825}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -61.449997, y: -0.34999847}
-  m_SizeDelta: {x: 122.88, y: -46.46}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -0.010009766, y: -0.000061035156}
+  m_SizeDelta: {x: 192.42, y: 90.14}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &317893001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2148,7 +2148,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 47.3
+  m_fontSize: 71.05
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3183,10 +3183,10 @@ RectTransform:
   m_Father: {fileID: 1843103638}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.6775823, y: 0.8695317}
+  m_AnchorMin: {x: 0.96000004, y: 1}
   m_AnchorMax: {x: 0.96000004, y: 1}
-  m_AnchoredPosition: {x: 0.16784668, y: -0.61779785}
-  m_SizeDelta: {x: 0.33578, y: 1.22}
+  m_AnchoredPosition: {x: -159.52997, y: -70.55701}
+  m_SizeDelta: {x: 319.74, y: 141.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &497602386
 PrefabInstance:
@@ -3591,10 +3591,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1247151277}
     m_Modifications:
-    - target: {fileID: 3534190964040990226, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
-      propertyPath: m_Name
-      value: Brick (10)
-      objectReference: {fileID: 0}
     - target: {fileID: 673552572604370967, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -3638,6 +3634,10 @@ PrefabInstance:
     - target: {fileID: 673552572604370967, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3534190964040990226, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
+      propertyPath: m_Name
+      value: Brick (10)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4454,10 +4454,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1247151277}
     m_Modifications:
-    - target: {fileID: 3534190964040990226, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
-      propertyPath: m_Name
-      value: Brick (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 673552572604370967, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -4501,6 +4497,10 @@ PrefabInstance:
     - target: {fileID: 673552572604370967, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3534190964040990226, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
+      propertyPath: m_Name
+      value: Brick (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5330,18 +5330,18 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 975823772}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.02}
+  m_LocalPosition: {x: 0, y: 0, z: -0.020002723}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 495498825}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.31}
-  m_AnchorMax: {x: 0, y: 0.697}
-  m_AnchoredPosition: {x: 47.93, y: 0.096559525}
-  m_SizeDelta: {x: 97.77, y: 7.0369987}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: -0.00018310547, y: -0.000061035156}
+  m_SizeDelta: {x: 122.38, y: 89.539}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &975823774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5388,10 +5388,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1247151277}
     m_Modifications:
-    - target: {fileID: 3534190964040990226, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
-      propertyPath: m_Name
-      value: Brick (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 673552572604370967, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -5435,6 +5431,10 @@ PrefabInstance:
     - target: {fileID: 673552572604370967, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3534190964040990226, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
+      propertyPath: m_Name
+      value: Brick (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6114,10 +6114,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1247151277}
     m_Modifications:
-    - target: {fileID: 3534190964040990226, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
-      propertyPath: m_Name
-      value: Brick (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 673552572604370967, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -6161,6 +6157,10 @@ PrefabInstance:
     - target: {fileID: 673552572604370967, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3534190964040990226, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
+      propertyPath: m_Name
+      value: Brick (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6889,10 +6889,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1247151277}
     m_Modifications:
-    - target: {fileID: 3534190964040990226, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
-      propertyPath: m_Name
-      value: Brick (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 673552572604370967, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -6936,6 +6932,10 @@ PrefabInstance:
     - target: {fileID: 673552572604370967, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3534190964040990226, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
+      propertyPath: m_Name
+      value: Brick (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7801,18 +7801,18 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1518959188}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.19}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1843103638}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.023367992, y: 0.87462366}
-  m_AnchorMax: {x: 0.15126404, y: 1}
-  m_AnchoredPosition: {x: 0.13000488, y: 0.08001709}
-  m_SizeDelta: {x: 0.25999832, y: -0.16999817}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 120.099976, y: 0}
+  m_SizeDelta: {x: 246.26001, y: 135.83}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1518959190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7860,7 +7860,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 43.5
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -8816,10 +8816,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1247151277}
     m_Modifications:
-    - target: {fileID: 3534190964040990226, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
-      propertyPath: m_Name
-      value: Brick (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 673552572604370967, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -8863,6 +8859,10 @@ PrefabInstance:
     - target: {fileID: 673552572604370967, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3534190964040990226, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
+      propertyPath: m_Name
+      value: Brick (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9014,10 +9014,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1247151277}
     m_Modifications:
-    - target: {fileID: 3534190964040990226, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
-      propertyPath: m_Name
-      value: Brick (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 673552572604370967, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -9061,6 +9057,10 @@ PrefabInstance:
     - target: {fileID: 673552572604370967, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3534190964040990226, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
+      propertyPath: m_Name
+      value: Brick (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9359,12 +9359,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1080, y: 1920}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -10410,10 +10410,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1247151277}
     m_Modifications:
-    - target: {fileID: 3534190964040990226, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
-      propertyPath: m_Name
-      value: Brick (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 673552572604370967, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -10457,6 +10453,10 @@ PrefabInstance:
     - target: {fileID: 673552572604370967, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3534190964040990226, guid: 6f91ffb5d22c80c4aac648a01130e859, type: 3}
+      propertyPath: m_Name
+      value: Brick (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
