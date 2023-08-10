@@ -7,6 +7,8 @@ public class TimeCountdown : MonoBehaviour
     [SerializeField] public float TimeRemaining;
     [SerializeField] private float _totalTime;
 
+    public 
+
     void Start()
     {
         TimeRemaining = _totalTime;

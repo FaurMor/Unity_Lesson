@@ -5,7 +5,7 @@ using UnityEngine;
 public class TimePanel : MonoBehaviour
 {
     [SerializeField] private TimeCountdown _timer;
-    [SerializeField] private TMPro.TMP_Text _text;
+    private TMPro.TMP_Text _text;
 
     void Start()
     {
@@ -29,6 +29,6 @@ public class TimePanel : MonoBehaviour
     {
         int minutes = (int)(time / 60);
         int seconds = (int)(time % 60);
-        return minutes + ":" + seconds;
+        return string.Format("{0}:{1:00}", minutes, seconds);
     }
 }

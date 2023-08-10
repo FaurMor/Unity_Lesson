@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectSpawn : MonoBehaviour
+public class BrickSpawn : MonoBehaviour
 {
     private const float YCoordinate = 2f;
-
-    [SerializeField] private GameObject spawnObject;
+    [SerializeField] private GameObject _spawnObject;
     private List<Vector3> _spawnLocationList = new List<Vector3>
     {
         new Vector3(10f, YCoordinate, 21.5f),
@@ -21,11 +20,13 @@ public class ObjectSpawn : MonoBehaviour
         new Vector3(3.5f, YCoordinate, -17.5f)
     };
 
+    public int TotalSpawnedBricks => _spawnLocationList.Count;
+
     private void Start()
     {
         foreach(var spawnLocation  in _spawnLocationList)
         {
-            Instantiate(spawnObject, spawnLocation, Quaternion.identity);
+            Instantiate(_spawnObject, spawnLocation, Quaternion.identity);
         }
     }
 }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8518586452578735623}
   - component: {fileID: 7329939124060158431}
   - component: {fileID: 329017112352194793}
+  - component: {fileID: 5800962295299302491}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -32,7 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8518586452578735623
 MeshFilter:
@@ -99,9 +100,22 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.7
   m_Center: {x: -7.6447455e-16, y: 0, z: 0.10759021}
+--- !u!114 &5800962295299302491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3534190964040990226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bed5c07c3b506e448809d3f226eebfb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bricksCountPanel: {fileID: 0}
