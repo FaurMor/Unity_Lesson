@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class BrickSpawn : MonoBehaviour
 {
-    private const float YCoordinate = 2f;
-
     [SerializeField] private GameObject _spawnObject;
     [SerializeField] private GameObject _spawnTargetParent;
 
