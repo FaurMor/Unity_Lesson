@@ -17,10 +17,5 @@ public class TimeCountdown : MonoBehaviour
         {
             TimeRemaining -= Time.deltaTime;
         }
-        else
-        {
-            TimeRemaining = 0;
-            enabled = false;
-        }
     }
 }

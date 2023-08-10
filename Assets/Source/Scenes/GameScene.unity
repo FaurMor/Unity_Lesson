@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 1bf957fe365f42748b21b3dca7aca250, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -1749,6 +1749,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4411934763973888569, guid: fcdc76ca7b49bd34e83d99d3e3336a2e, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7017080619010309386, guid: fcdc76ca7b49bd34e83d99d3e3336a2e, type: 3}
       propertyPath: m_Name
       value: WoodBox (6)
@@ -2396,7 +2400,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 379247438}
   m_LocalRotation: {x: 0.32376575, y: 0.6286301, z: -0.32376575, w: 0.6286301}
-  m_LocalPosition: {x: -3.41, y: 46.21, z: 0}
+  m_LocalPosition: {x: -3.41, y: 46.21, z: -4.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6879,7 +6883,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1367636778}
   m_Layer: 0
-  m_Name: BricksSpawnTarget
+  m_Name: BrickSpawnTargets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7122,6 +7126,8 @@ GameObject:
   - component: {fileID: 1448440977}
   - component: {fileID: 1448440983}
   - component: {fileID: 1448440982}
+  - component: {fileID: 1448440984}
+  - component: {fileID: 1448440985}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -7144,11 +7150,11 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.61
+  m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1448440978
 MeshRenderer:
@@ -7208,7 +7214,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448440976}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.0883064, y: 1.67, z: 14.571564}
+  m_LocalPosition: {x: -4.78, y: 1.67, z: 15.99}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7235,7 +7241,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448440976}
   serializedVersion: 4
-  m_Mass: 10
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -7250,10 +7256,36 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!114 &1448440984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448440976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41a6632cc4e6f4b4284bfc804108d6fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bricksCountPanel: {fileID: 317893003}
+--- !u!114 &1448440985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448440976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4a14d380ea63814b84b8308c6599edb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 2
 --- !u!1 &1455336807
 GameObject:
   m_ObjectHideFlags: 0

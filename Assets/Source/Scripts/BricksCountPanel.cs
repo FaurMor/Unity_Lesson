@@ -1,5 +1,5 @@
 using UnityEngine;
-
+[RequireComponent (typeof(TMPro.TMP_Text))]
 public class BricksCountPanel : MonoBehaviour
 {
     [SerializeField] private TMPro.TMP_Text _text;
@@ -30,7 +30,7 @@ public class BricksCountPanel : MonoBehaviour
         UpdateBricksCount();
     }
 
-    public void PickUpBrick()
+    public void AddBrickOnPanel()
     {
         _assembledBricks++;
         UpdateBricksCount();

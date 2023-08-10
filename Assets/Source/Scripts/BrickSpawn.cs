@@ -22,7 +22,7 @@ public class BrickSpawn : MonoBehaviour
     {
         foreach (var spawnTarget in _spawnLocationList)
         {
-            Instantiate(_spawnObject, spawnTarget.transform.position, Quaternion.identity);
+            Instantiate(_spawnObject, spawnTarget.transform.position, _spawnObject.transform.rotation);
         }
     }
 }

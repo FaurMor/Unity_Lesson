@@ -1,7 +1,8 @@
 using UnityEngine;
 
+[RequireComponent (typeof(TMPro.TMP_Text))]
 public class TimePanel : MonoBehaviour
-{
+{ 
     [SerializeField] private TimeCountdown _timer;
 
     private TMPro.TMP_Text _text;
@@ -21,14 +22,7 @@ public class TimePanel : MonoBehaviour
 
     private void Update()
     {
-        if(_timer != null)
-        {
-            _text.text = TimeFormat(_timer.TimeRemaining);
-        }
-        else
-        {
-            enabled = false;
-        }
+        _text.text = TimeFormat(_timer.TimeRemaining);
     }
     
     private string TimeFormat(float time)

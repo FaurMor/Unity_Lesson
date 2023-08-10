@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class FinishBarier : MonoBehaviour
+public class FinishBarrier : MonoBehaviour
 {
     [SerializeField] private TimeCountdown _timer;
     [SerializeField] private float _timeDisableObject;
@@ -12,6 +12,7 @@ public class FinishBarier : MonoBehaviour
         {
             _panel = FindAnyObjectByType<BricksCountPanel>();
         }
+
         if (_timer == null) 
         {
             _timer = FindAnyObjectByType<TimeCountdown>();
