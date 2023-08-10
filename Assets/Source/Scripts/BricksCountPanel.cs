@@ -1,31 +1,42 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BricksCountPanel : MonoBehaviour
 {
     [SerializeField] private TMPro.TMP_Text _text;
     [SerializeField] private BrickSpawn _brickSpawn;
+
     private int _maxBricks;
-    [SerializeField] private int _assembledBricks = 0;
-    void Start()
+    private int _assembledBricks;
+
+    public bool IsCollected => _assembledBricks == _maxBricks;
+
+    private void OnValidate()
     {
-        TryGetComponent<TMPro.TMP_Text>(out _text);
-        _brickSpawn = FindAnyObjectByType<BrickSpawn>();
-        _maxBricks = _brickSpawn.TotalSpawnedBricks;
-        _assembledBricks = 0;
-        ShowBricksCollected();
+        if (_brickSpawn == null)
+        {
+            _brickSpawn = FindAnyObjectByType<BrickSpawn>();
+        }
     }
 
-    public bool IsCollected()
-        => _assembledBricks == _maxBricks;
-    public void AccureBrick()
+    private void Awake()
+    {
+        _text = GetComponent<TMPro.TMP_Text>();
+        _assembledBricks = 0;
+    }
+
+    private void Start()
+    {
+        _maxBricks = _brickSpawn.TotalSpawnedBricks;
+        UpdateBricksCount();
+    }
+
+    public void PickUpBrick()
     {
         _assembledBricks++;
-        ShowBricksCollected();
+        UpdateBricksCount();
     }
 
-    private void ShowBricksCollected()
+    private void UpdateBricksCount()
     {
         _text.text = StringFormat(_assembledBricks, _maxBricks);
     }

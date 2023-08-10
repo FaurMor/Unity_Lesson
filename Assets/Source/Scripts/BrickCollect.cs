@@ -1,27 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BrickCollect : MonoBehaviour
 {
     [SerializeField] private BricksCountPanel _bricksCountPanel;
 
-    private void Start()
+    private void OnValidate()
     {
-        _bricksCountPanel = FindAnyObjectByType<BricksCountPanel>();
+        if ( _bricksCountPanel == null)
+        {
+            _bricksCountPanel = FindAnyObjectByType<BricksCountPanel>();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.TryGetComponent<User>(out var player))
+        if (other.gameObject.TryGetComponent<UserTarget>(out var player))
         {
-            _bricksCountPanel.AccureBrick();
-            Debug.Log("Brick is collected");
+            _bricksCountPanel.PickUpBrick();
             gameObject.SetActive(false);
-        }
-        else
-        {
-            Debug.Log("Is not player");
         }
     }
 }

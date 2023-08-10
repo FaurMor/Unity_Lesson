@@ -1,19 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TimePanel : MonoBehaviour
 {
     [SerializeField] private TimeCountdown _timer;
+
     private TMPro.TMP_Text _text;
 
-    void Start()
+    void OnValidate()
     {
-        _timer = FindAnyObjectByType<TimeCountdown>();
+        if (_timer == null)
+        {
+            _timer = FindAnyObjectByType<TimeCountdown>();
+        }
+    }
+
+    private void Awake()
+    {
         _text = GetComponent<TMPro.TMP_Text>();
     }
 
-    void Update()
+    private void Update()
     {
         if(_timer != null)
         {
@@ -21,10 +27,10 @@ public class TimePanel : MonoBehaviour
         }
         else
         {
-            this.enabled = false;
+            enabled = false;
         }
     }
-
+    
     private string TimeFormat(float time)
     {
         int minutes = (int)(time / 60);

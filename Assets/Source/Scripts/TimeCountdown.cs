@@ -1,20 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TimeCountdown : MonoBehaviour
 {
-    [SerializeField] public float TimeRemaining;
     [SerializeField] private float _totalTime;
 
-    public 
+    public float TimeRemaining { get; private set; }
 
-    void Start()
+    private void Awake()
     {
         TimeRemaining = _totalTime;
     }
 
-    void Update()
+    private void Update()
     {
         if (TimeRemaining > 0)
         {
